@@ -1,9 +1,51 @@
-node_modules
-.next
-out
-dist
+# Dependencies
+node_modules/
+# Build outputs (generic + Node/Next)
+dist/
+build/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+# Framework build caches (leak in as generated dirs after a build/test runs)
+.angular/
+.vite/
+.svelte-kit/
+.nuxt/
+.output/
+.astro/
+.turbo/
+.parcel-cache/
+.cache/
+.eslintcache
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+# .NET
+bin/
+obj/
+publish/
+__sdlc_publish/
+TestResults/
+*.user
+*.suo
+.vs/
+# Java
+target/
+*.class
+.gradle/
+# Go
+vendor/
+# Environment / secrets
 .env
-.env.*
-!.env.example
-!.env.sample
-!.env.template
+.env*.local
+# Logs & OS cruft
+*.log
+.DS_Store
